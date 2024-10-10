@@ -25,7 +25,6 @@ a,
 .btn {
   transition: all 300ms ease;
 }
-
 /* DESKTOP NAV */
 
 nav,
@@ -170,7 +169,7 @@ section {
 }
 
 .section__pic-container {
-  display:flex;
+  display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -217,7 +216,7 @@ section {
 
 .btn-container {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   gap: 1rem;
 }
 
