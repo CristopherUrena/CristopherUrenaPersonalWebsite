@@ -5,40 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristopher Urena's Portfolio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
+ 
 </head>
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Cristopher Urena</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Cristopher Urena</a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Cristopher</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
+  <section id="profile" class="container py-5">
     <div class="section__pic-container">
-      <img src="./Assets/CrisUrena1.jpeg" alt="Cristopher Urena Profile Picture">
+      <img src="./Assets/CrisUrena3.jpeg" alt="Cristopher Urena Profile Picture">
     </div>
     
     <div class="section__text">
@@ -46,10 +49,10 @@
       <h1 class="title">Cristopher Urena</h1>
       <p class="section__text__p2">Frontend Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./Assets/Cristopher_Urena_Resume..pdf')">
+        <button class="btn btn-dark" onclick="window.open('./Assets/Cristopher_Urena_Resume..pdf')">
           Download CV
         </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        <button class="btn btn-dark" onclick="location.href='./#contact'">
           Contact Info
         </button>
       </div>
@@ -59,34 +62,34 @@
       </div>
     </div>
   </section>
-  <section id="about">
+  <section id="about" class="container py-5">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
       <div class="section__pic-container">
-        <img src="./Assets/CrisUrena2.jpeg" alt="Profile picture" class="about-pic">
+        <img src="./Assets/CrisUrena2.jpeg" alt="Profile picture" class="about-pic img-fluid rounded">
       </div>
       <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
+        <div class="row g-4">
+          <div class="details-container card shadow-sm p-4">
             <img src="./assets/experience.png" alt="Experience icon" class="icon">
             <h3>Experience</h3>
             <p>2+ years <br>Frontend Development</p>
            </div>
-          <div class="details-container">
+          <div class="details-container card shadow-sm p-4">
             <img src="./assets/education.png" alt="Education icon" class="icon">
             <p>Undergrad<br>Fordham University</p>
           </div>
         <div class="text-container">
           <p>
-            "Our greatest glory is not in never falling, but in rising every time we fall". Hello, my name is Cristopher Urena, I am a second year student at Fordham University majoring in Computer Science and minoring in Business. My hard work and dedication have been the tools that I've used to get to where I am now and continue to be. I hope that you enjoy my projects and thank you for visiting my webpage. 
+            "Our greatest glory is not in never falling, but in rising every time we fall". Hello, my name is Cristopher Urena, I am a Senior at Fordham University majoring in Computer Science and minoring in Business. My hard work and dedication have been the tools that I've used to get to where I am now and continue to be. I hope that you enjoy my projects and thank you for visiting my webpage. 
           </p>
         </div>
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
   </section>
-  <section id="experience">
+  <section id="experience" class="container py-5">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
@@ -143,35 +146,35 @@
     
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
   </section>
-  <section id="projects">
+  <section id="projects" class="container py-5">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
+      <div class="row g-4">
+        <div class="details-container color-container card shadow-sm p-4">
           <div class="article-container">
             <img src="./Assets/Gemini_Generated_Image_ildmw6ildmw6ildm.jpeg" alt="Project 1" class="project-img">
           </div>
           <h2 class="experience-sub-title project-title">Magic Square</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CristopherUrena/Magic-Square'">
+            <button class="btn btn-dark project-btn" onclick="location.href='https://github.com/CristopherUrena/Magic-Square'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='file:///Users/crisurena/Downloads/MagicSquares.cpp'">
+            <button class="btn btn-dark project-btn" onclick="location.href='file:///Users/crisurena/Downloads/MagicSquares.cpp'">
               Live Demo
             </button>
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./Assets/Gemini_Generated_Image_hn5xzzhn5xzzhn5x.jpeg" alt="Project 2" class="project-img">
+            <img src="./Assets/Gemini_Generated_Image_hn5xzzhn5xzzhn5x.jpeg" alt="Project 2" class="project-img img-fluid rounded">
           </div>
           <h2 class="experience-sub-title project-title">Array Play</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CristopherUrena/Array-Play'">
+            <button class="btn btn-dark project-btn" onclick="location.href='https://github.com/CristopherUrena/Array-Play'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CristopherUrena/Array-Play'">
+            <button class="btn btn-dark project-btn" onclick="location.href='https://github.com/CristopherUrena/Array-Play'">
               Live Demo
             </button>
           </div>
@@ -182,7 +185,7 @@
           </div>
           <h2 class="experience-sub-title project-title">Pong game</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CristopherUrena/Pong-Game'">
+            <button class="btn btn-dark project-btn" onclick="location.href='https://github.com/CristopherUrena/Pong-Game'">
               Github
             </button>
           </div>
@@ -192,7 +195,7 @@
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
   </section>
-  <section id="contact">
+  <section id="contact" class="container py-5">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
@@ -220,5 +223,8 @@
     <p>Copyright © 2023 Cristopher Urena. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+
 </body>
 </html>
